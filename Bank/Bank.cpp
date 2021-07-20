@@ -55,7 +55,7 @@ void Withdrawal(void)
 		if (!strcmp(name, person.name))
 		{
 			cout << "출금액:"; cin >> Withdrawal_number;
-			if (person.Balance_number > Withdrawal_number)
+			if (person.Balance_number >= Withdrawal_number)
 			{
 				person.Balance_number -= Withdrawal_number;
 				cout << "출금완료" << endl;
